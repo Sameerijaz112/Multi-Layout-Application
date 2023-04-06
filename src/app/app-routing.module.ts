@@ -5,29 +5,37 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
 
 const routes: Routes = [
   /* dashboard */
-  {path:'', component: DashboardLayoutComponent ,  
+  {
+    path: '', component: DashboardLayoutComponent,
 
-children:[
-   {path:'dashboard',
-  redirectTo:'/dashboard',
-  pathMatch:'full'
+    children: [
+      {
+        path: 'dashboard',
+        redirectTo: '/dashboard',
+        pathMatch: 'full'
+      },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+      }
+    ]
   },
-   {path:'dashboard',
-    loadChildren:() => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
-  }
-]},
 
-/* auth */
-{path:'',component:AuthLayoutComponent,
-children:[
-  {path:'',
-  redirectTo:'/auth',
-  pathMatch:'full'
-},
-{path:'auth',
-loadChildren:() =>import('./auth/auth.module').then(m => m.AuthModule)
-}
-]}
+  /* auth */
+  {
+    path: '', component: AuthLayoutComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: '/auth',
+        pathMatch: 'full'
+      },
+      {
+        path: 'auth',
+        loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+      }
+    ]
+  }
 ];
 
 @NgModule({
