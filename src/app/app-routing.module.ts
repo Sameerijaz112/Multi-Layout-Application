@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
+import { UserComponent } from './user/user.component';
+import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
 
 const routes: Routes = [
   /* dashboard */
@@ -35,7 +37,9 @@ const routes: Routes = [
         loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
       }
     ]
-  }
+  },
+  {path:'user',component:UserComponent},
+  {path:'user-dashboard',component:UserDASHBOARDComponent}
 ];
 
 @NgModule({
