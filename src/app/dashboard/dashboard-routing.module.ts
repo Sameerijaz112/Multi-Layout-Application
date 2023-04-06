@@ -6,7 +6,7 @@ import { DashboardLayoutComponent } from '../layout/dashboard-layout/dashboard-l
 const routes: Routes = [
   {path:'',component:DashboardLayoutComponent, children:[
     {
-      path:'Dashoard',component:DashboardLayoutComponent
+      path:'dashoard',component:DashboardLayoutComponent
     }
   ]}
 ];
