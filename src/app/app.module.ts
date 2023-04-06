@@ -7,7 +7,7 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { UserComponent } from './user/user.component';
 import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
-
+import { FormsModule } from '@angular/forms'; // <-- Add this line
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule // 
   ],
   providers: [],
   bootstrap: [AppComponent]
