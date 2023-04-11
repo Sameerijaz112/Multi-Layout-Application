@@ -8,7 +8,8 @@ import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-la
 import { UserComponent } from './user/user.component';
 import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
 import { FormsModule } from '@angular/forms';
-import { ChildComponent } from './Practice/child/child.component'; // <-- Add this line
+import { ChildComponent } from './Practice/child/child.component';
+import { ParentsComponent } from './Practice/parents/parents.component'; // <-- Add this line
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { ChildComponent } from './Practice/child/child.component'; // <-- Add th
     DashboardLayoutComponent,
     UserComponent,
     UserDASHBOARDComponent,
-    ChildComponent
+    ChildComponent,
+    ParentsComponent
   ],
   imports: [
     BrowserModule,

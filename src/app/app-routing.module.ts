@@ -4,8 +4,10 @@ import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-la
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
 import { UserComponent } from './user/user.component';
 import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
+import { ChildComponent } from './Practice/child/child.component';
 
 const routes: Routes = [
+  {path:'child',component:ChildComponent},
   /* dashboard */
   {
     path: '', component: DashboardLayoutComponent,
