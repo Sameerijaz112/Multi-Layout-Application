@@ -7,14 +7,16 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { UserComponent } from './user/user.component';
 import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
-import { FormsModule } from '@angular/forms'; // <-- Add this line
+import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './Practice/child/child.component'; // <-- Add this line
 @NgModule({
   declarations: [
     AppComponent,
     AuthLayoutComponent,
     DashboardLayoutComponent,
     UserComponent,
-    UserDASHBOARDComponent
+    UserDASHBOARDComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
