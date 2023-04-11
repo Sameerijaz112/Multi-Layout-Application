@@ -5,9 +5,11 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
 import { UserComponent } from './user/user.component';
 import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
 import { ChildComponent } from './Practice/child/child.component';
+import { ParentsComponent } from './Practice/parents/parents.component';
 
 const routes: Routes = [
   {path:'child',component:ChildComponent},
+  {path:'parents',component:ParentsComponent},
   /* dashboard */
   {
     path: '', component: DashboardLayoutComponent,

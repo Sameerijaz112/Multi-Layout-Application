@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-parents',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parents.component.css']
 })
 export class ParentsComponent implements OnInit {
+ 
+ data = 10;
 
   constructor() { }
 
