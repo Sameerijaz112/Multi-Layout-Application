@@ -9,7 +9,8 @@ import { UserComponent } from './user/user.component';
 import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './Practice/child/child.component';
-import { ParentsComponent } from './Practice/parents/parents.component'; // <-- Add this line
+import { ParentsComponent } from './Practice/parents/parents.component';
+import { ChildTwoComponent } from './child-two/child-two.component'; // <-- Add this line
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { ParentsComponent } from './Practice/parents/parents.component'; // <-- 
     UserComponent,
     UserDASHBOARDComponent,
     ChildComponent,
-    ParentsComponent
+    ParentsComponent,
+    ChildTwoComponent
   ],
   imports: [
     BrowserModule,
