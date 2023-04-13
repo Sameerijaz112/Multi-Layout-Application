@@ -13,5 +13,7 @@ export class ParentsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+parents(item:string){
+  console.warn(item)
+}
 }
