@@ -6,7 +6,7 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
   styleUrls: ['./child-two.component.css']
 })
 export class ChildTwoComponent implements OnInit {
-
+@Output() parentstwo = new EventEmitter<number>();
   constructor() { }
 
   ngOnInit(): void {
