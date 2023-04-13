@@ -16,4 +16,6 @@ export class ParentsComponent implements OnInit {
 parents(item:string){
   console.warn(item)
 }
+parentstwo(data:number){
+  console.log(data)}
 }
