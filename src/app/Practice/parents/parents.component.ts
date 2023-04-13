@@ -18,4 +18,9 @@ export class ParentsComponent implements OnInit {
   }
 parentstwo(data:string): void {
   console.warn(data)}
+
+  parentsThree(child:string){
+  console.log(child)
+  }
+  
 }
