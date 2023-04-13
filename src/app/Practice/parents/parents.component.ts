@@ -7,15 +7,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ParentsComponent implements OnInit {
  
- data = 10;
+ 
 
   constructor() { }
 
   ngOnInit(): void {
   }
-parents(item:string){
-  console.warn(item)
-}
-parentstwo(data:number){
-  console.log(data)}
+  parents(item: string): void {
+    console.warn(item);
+  }
+parentstwo(data:string): void {
+  console.warn(data)}
 }
