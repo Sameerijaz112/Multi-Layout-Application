@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './Practice/child/child.component';
 import { ParentsComponent } from './Practice/parents/parents.component';
 import { ChildTwoComponent } from './child-two/child-two.component';
-import { ChildThreeComponent } from './child-three/child-three.component'; // <-- Add this line
+import { ChildThreeComponent } from './child-three/child-three.component';
+import { TwoWaybindingComponent } from './two-waybinding/two-waybinding.component'; // <-- Add this line
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { ChildThreeComponent } from './child-three/child-three.component'; // <-
     ChildComponent,
     ParentsComponent,
     ChildTwoComponent,
-    ChildThreeComponent
+    ChildThreeComponent,
+    TwoWaybindingComponent
   ],
   imports: [
     BrowserModule,
