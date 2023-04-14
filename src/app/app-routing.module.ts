@@ -7,11 +7,13 @@ import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.componen
 import { ChildComponent } from './Practice/child/child.component';
 import { ParentsComponent } from './Practice/parents/parents.component';
 import { TwoWaybindingComponent } from './two-waybinding/two-waybinding.component';
+import { TemplateReferanceComponent } from './template-referance/template-referance.component';
 
 const routes: Routes = [
   {path:'child',component:ChildComponent},
   {path:'parents',component:ParentsComponent},
   {path:'binding',component:TwoWaybindingComponent},
+  {path:'template-rafrence',component:TemplateReferanceComponent},
   /* dashboard */
   {
     path: '', component: DashboardLayoutComponent,
