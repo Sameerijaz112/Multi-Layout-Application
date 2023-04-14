@@ -6,10 +6,12 @@ import { UserComponent } from './user/user.component';
 import { UserDASHBOARDComponent } from './user-dashboard/user-dashboard.component';
 import { ChildComponent } from './Practice/child/child.component';
 import { ParentsComponent } from './Practice/parents/parents.component';
+import { TwoWaybindingComponent } from './two-waybinding/two-waybinding.component';
 
 const routes: Routes = [
   {path:'child',component:ChildComponent},
   {path:'parents',component:ParentsComponent},
+  {path:'binding',component:TwoWaybindingComponent},
   /* dashboard */
   {
     path: '', component: DashboardLayoutComponent,
