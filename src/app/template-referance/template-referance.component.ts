@@ -11,5 +11,7 @@ export class TemplateReferanceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+getVal(item:any){
+console.warn(item)
+}
 }
