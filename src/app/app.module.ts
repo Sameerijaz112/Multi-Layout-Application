@@ -12,7 +12,8 @@ import { ChildComponent } from './Practice/child/child.component';
 import { ParentsComponent } from './Practice/parents/parents.component';
 import { ChildTwoComponent } from './child-two/child-two.component';
 import { ChildThreeComponent } from './child-three/child-three.component';
-import { TwoWaybindingComponent } from './two-waybinding/two-waybinding.component'; // <-- Add this line
+import { TwoWaybindingComponent } from './two-waybinding/two-waybinding.component';
+import { TemplateReferanceComponent } from './template-referance/template-referance.component'; // <-- Add this line
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TwoWaybindingComponent } from './two-waybinding/two-waybinding.componen
     ParentsComponent,
     ChildTwoComponent,
     ChildThreeComponent,
-    TwoWaybindingComponent
+    TwoWaybindingComponent,
+    TemplateReferanceComponent
   ],
   imports: [
     BrowserModule,
