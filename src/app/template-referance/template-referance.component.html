@@ -1,3 +1,19 @@
 <h1>template-referance works!</h1>
 <input type="text" name="" id="" #box>
 <button  class="btn btn-outline-danger" (click)="getVal(box.value)">Get value</button>
+<body>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth'
+          });
+          calendar.render();
+        });
+    
+      </script>
+      <div id='calendar'></div>
+
+ 
+  </body>

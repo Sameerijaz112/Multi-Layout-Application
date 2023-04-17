@@ -32,6 +32,7 @@ import { TemplateReferanceComponent } from './template-referance/template-refera
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     FormsModule // 
   ],
   providers: [],
