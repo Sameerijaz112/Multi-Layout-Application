@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FullCalendarModule } from '@fullcalendar/angular';
 @Component({
   selector: 'app-template-referance',
   templateUrl: './template-referance.component.html',
